@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project C_Timers_Capture_SW ****
+
+"C:\\ti\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'C_Timers_Capture_SW.out' is up to date.
+
+**** Build Finished ****

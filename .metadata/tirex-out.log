@@ -1,0 +1,58 @@
+-----TI-REX started at Wed Apr 09 2025 18:45:34 GMT+0800 (China Standard Time)
+TIREX server listening on port 55432
+setting to  true
+setting to  true
+setting to  true
+setting to  true
+About to exit with code:  1
+: Read access attempted while write in progress
+    at makeError (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\readWriteCheck.js:71:19)
+    at ReadWriteCheck.entry (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\readWriteCheck.js:44:19)
+    at RexDB.find (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\rexdb.js:799:13)
+    at getPackages (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\app.js:2163:29)
+    at _forceAllSWPackages (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\app.js:1121:9)
+    at _doQuery (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\app.js:991:9)
+    at C:\ti\ccs1250\ccs\tirex3\ti-rex-core\app.js:912:13
+    at callbacks (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\node_modules\express\lib\router\index.js:164:37)
+    at param (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\node_modules\express\lib\router\index.js:138:11)
+    at pass (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\node_modules\express\lib\router\index.js:145:5)
+TIREX UNCAUGHT EXCEPTION
+date: Wed Apr 09 2025 18:47:00 GMT+0800 (China Standard Time)
+tirexVersion: 3.8.0+201911142334
+nodeVersion: v6.5.0
+nodePlatform: win32
+nodeArch: ia32
+tirexPluginVersion: 1.0.0.202307061549
+ccsVersion: 12.5.0.00007
+myHttpPort: 55432
+ccs_port: 57101
+stack: Error: REXDB: Write access attempted while write in progress
+    at makeError (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\readWriteCheck.js:71:19)
+    at ReadWriteCheck.entry (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\readWriteCheck.js:38:19)
+    at RexDB.remove (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\rexdb.js:394:13)
+    at C:\ti\ccs1250\ccs\tirex3\ti-rex-core\lib\localserver.js:1646:29
+    at _callbackX (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\lib\localserver.js:121:13)
+    at Request._callback (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\lib\localserver.js:298:13)
+    at Request.self.callback (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\node_modules\request\request.js:188:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\node_modules\request\request.js:1171:10)
+message: REXDB: Write access attempted while write in progress
+readwritecheck: true
+writeInProgressTime: Wed Apr 09 2025 18:47:00 GMT+0800 (China Standard Time)
+writeInProgressStack: Error
+    at ReadWriteCheck.entry (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\readWriteCheck.js:49:35)
+    at RexDB.remove (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\rexdb\lib\rexdb.js:394:13)
+    at C:\ti\ccs1250\ccs\tirex3\ti-rex-core\lib\localserver.js:1646:29
+    at _callbackX (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\lib\localserver.js:121:13)
+    at Request._callback (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\lib\localserver.js:298:13)
+    at Request.self.callback (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\node_modules\request\request.js:188:22)
+    at emitTwo (events.js:106:13)
+    at Request.emit (events.js:191:7)
+    at Request.<anonymous> (C:\ti\ccs1250\ccs\tirex3\ti-rex-core\node_modules\request\request.js:1171:10)
+    at emitOne (events.js:96:13)
+    at Request.emit (events.js:188:7)
+readInProgressTime: null
+readInProgressStack: null
+NOTE: Deleting DB folder due to possible corruption of DB files: C:\Users\Ulysses Andulte\ti\tirex-localserver-3.7.1\db
+

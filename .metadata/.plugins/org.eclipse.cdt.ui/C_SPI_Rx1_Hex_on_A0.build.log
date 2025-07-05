@@ -1,0 +1,8 @@
+
+**** Build of configuration Debug for project C_SPI_Rx1_Hex_on_A0 ****
+
+"C:\\ti\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+gmake[1]: 'C_SPI_Rx1_Hex_on_A0.out' is up to date.
+
+**** Build Finished ****

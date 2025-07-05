@@ -1,0 +1,8 @@
+"./main.obj"
+"./w5500/W5500/w5500.obj"
+"./w5500/socket.obj"
+"./w5500/w5500_spi.obj"
+"./w5500/wizchip_conf.obj"
+"../lnk_msp430fr2355.cmd"
+-lfrwp_init.a
+-llibc.a

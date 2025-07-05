@@ -1,0 +1,121 @@
+#include <msp430.h> 
+#include "w5500_spi.h"
+#include "wizchip_conf.h"
+#include "socket.h"
+#include <stdio.h>
+
+static void PHYStatusCheck(void);
+static void PrintPHYConf(void);
+void delay_ms(unsigned int ms);
+
+// Static config Mode
+wiz_NetInfo gWIZNETINFO = {
+        .mac = { 0x80, 0x34, 0x28, 0x74, 0xA5, 0xCB },//MSB - LSB
+        .ip ={ 192, 168, 1, 112 },   // embedded host static ip address
+        .sn = { 255, 255, 255, 0 },  // Subnet Mask
+        .gw ={ 192, 168, 1, 1 },     // Gateway
+        .dns = { 8, 8, 8, 8 },       // google dns
+        .dhcp = NETINFO_STATIC };    // dhcp disabled, we are static config mode
+
+
+int main(void)
+{
+	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
+	
+	W5500Init();
+
+	// this is a central function that let us execute several commands on the driver
+	ctlnetwork(CN_SET_NETINFO, (void*) &gWIZNETINFO);
+
+	PHYStatusCheck();
+	PrintPHYConf();
+
+	while(1)
+	{
+	    //UCA0TXBUF = 0xDE;           // send x4D out over SPI
+	    //wizchip_write(0xDE);
+	    //int i = 0;
+	    //for (i=0; i<10000; i++) {}  // delay
+	}
+
+	return 0;
+}
+
+
+void delay_ms(unsigned int ms)
+{
+    while (ms--)
+    {
+        __delay_cycles(1000); // For 1MHz MCLK = ~1ms
+    }
+}
+
+
+
+static void PHYStatusCheck(void)
+{
+    uint8_t tmp;
+
+    do
+    {
+        printf("\r\nChecking Ethernet cable presence ...");
+
+        ctlwizchip(CW_GET_PHYLINK, (void*) &tmp);
+
+        if(tmp == PHY_LINK_OFF)
+        {
+            printf("No Cable Connected!");
+            delay_ms(1500);
+        }
+    }
+    while(tmp == PHY_LINK_OFF);
+
+    printf("\r\nGood! Cable got connected!");
+}
+
+
+static void PrintPHYConf(void)
+{
+    wiz_PhyConf phyconf;
+
+    ctlwizchip(CW_GET_PHYCONF, (void*) &phyconf);
+
+    if(phyconf.by == PHY_CONFBY_HW)
+    {
+       printf("\r\nPHY Configured by Hardware Pins");
+    }
+    else
+    {
+        printf("\r\nPHY Configured by Registers");
+    }
+
+    if(phyconf.mode == PHY_MODE_AUTONEGO)
+    {
+       printf("\r\nAutonegotiation Enabled");
+    }
+    else
+    {
+       printf("\r\nAutonegotiation NOT Enabled");
+    }
+
+    if(phyconf.duplex == PHY_DUPLEX_FULL)
+    {
+        printf("\r\nDuplex Mode: Full");
+    }
+    else
+    {
+       printf("\r\nDuplex Mode: Half");
+    }
+
+    if(phyconf.speed == PHY_SPEED_10)
+    {
+        printf("\r\nSpeed: 10Mbps");
+    }
+    else
+    {
+       printf("\r\nSpeed: 100Mbps");
+    }
+}
+
+
+

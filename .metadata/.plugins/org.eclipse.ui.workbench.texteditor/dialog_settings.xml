@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="UCB"/>
+		<list key="findhistory">
+			<item value="UCB"/>
+			<item value="UCB0CTLW0"/>
+			<item value="mode "/>
+			<item value="I/F"/>
+			<item value="Host I/F"/>
+			<item value="_MULTICAST_DEBUG_"/>
+			<item value="_WIZCHIP_"/>
+			<item value="Application"/>
+			<item value="reg_wizchip_spi_cbfunc"/>
+			<item value="GpioCtrlRegs"/>
+			<item value="P1Dir"/>
+			<item value="msp430fr233"/>
+			<item value="msp430fr"/>
+			<item value="curry"/>
+			<item value="UCTXCPTIFG"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="766"/>
+		<item key="DIALOG_Y_ORIGIN" value="321"/>
+		<item key="DIALOG_WIDTH" value="322"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

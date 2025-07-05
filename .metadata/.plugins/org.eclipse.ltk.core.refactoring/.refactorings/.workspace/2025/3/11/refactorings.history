@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Asm_ALU_INC_DEC&apos;" deleteContents="false" description="Delete resource &apos;Asm_ALU_INC_DEC&apos;" element1="/Asm_ALU_INC_DEC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1741838948432"/>&#x0A;<refactoring comment="Delete resource &apos;Asm_ALU_BITS_BITC&apos;" deleteContents="true" description="Delete resource &apos;Asm_ALU_BITS_BITC&apos;" element1="/Asm_ALU_BITS_BITC" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1741921813034"/>
+</session>

@@ -1,0 +1,62 @@
+
+**** Build of configuration CPU1_FLASH for project gpio_ex2_toggle ****
+
+"C:\\ti\\ccs1250\\ccs\\utils\\bin\\gmake" -k -j 12 all -O 
+ 
+Building file: "../gpio_ex2_toggle.syscfg"
+Invoking: SysConfig
+"C:/ti/sysconfig_1.23.1/sysconfig_cli.bat" -s "C:/ti/c2000/C2000Ware_5_04_00_00/.metadata/sdk.json" -d "F2837xD" --script "C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/gpio_ex2_toggle.syscfg" -o "syscfg" --compiler ccs
+Running script...
+Validating...
+Generating Code (gpio_ex2_toggle.syscfg)...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\board.c...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\board.h...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\board.cmd.genlibs...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\board.opt...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\board.json...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\pinmux.csv...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\c2000ware_libraries.cmd.genlibs...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\c2000ware_libraries.opt...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\c2000ware_libraries.c...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\c2000ware_libraries.h...
+Writing C:\Users\Ulysses Andulte\workspace_v12\gpio_ex2_toggle\CPU1_FLASH\syscfg\clocktree.h...
+Finished building: "../gpio_ex2_toggle.syscfg"
+ 
+Building file: "../gpio_ex2_toggle.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="gpio_ex2_toggle.d_raw" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/CPU1_FLASH/syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../gpio_ex2_toggle.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'gpio_ex2_toggle.obj' failed
+"../gpio_ex2_toggle.c", line 54: fatal error #1965: cannot open source file "F28x_Project.h"
+1 catastrophic error detected in the compilation of "../gpio_ex2_toggle.c".
+Compilation terminated.
+gmake: *** [gpio_ex2_toggle.obj] Error 1
+Building file: "../device/F2837xD_CodeStartBranch.asm"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/F2837xD_CodeStartBranch.d_raw" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/F2837xD_CodeStartBranch.asm"
+Finished building: "../device/F2837xD_CodeStartBranch.asm"
+ 
+Building file: "syscfg/board.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/board.d_raw" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/board.c"
+Finished building: "syscfg/board.c"
+ 
+Building file: "syscfg/c2000ware_libraries.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="syscfg/c2000ware_libraries.d_raw" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/CPU1_FLASH/syscfg" --obj_directory="syscfg" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "syscfg/c2000ware_libraries.c"
+Finished building: "syscfg/c2000ware_libraries.c"
+ 
+Building file: "../src/gpio_drv.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="src/gpio_drv.d_raw" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/CPU1_FLASH/syscfg" --obj_directory="src" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../src/gpio_drv.c"
+Finished building: "../src/gpio_drv.c"
+ 
+Building file: "../device/device.c"
+Invoking: C2000 Compiler
+"C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -Ooff --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/device" --include_path="C:/ti/c2000/C2000Ware_5_04_00_00/driverlib/f2837xd/driverlib" --include_path="C:/ti/ccs1250/ccs/tools/compiler/ti-cgt-c2000_22.6.1.LTS/include" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/include" --define=DEBUG --define=CPU1 --define=_FLASH --diag_suppress=10063 --diag_warning=225 --diag_wrap=off --display_error_number --abi=eabi --preproc_with_compile --preproc_dependency="device/device.d_raw" --include_path="C:/Users/Ulysses Andulte/workspace_v12/gpio_ex2_toggle/CPU1_FLASH/syscfg" --obj_directory="device" --cmd_file="syscfg/board.opt" --cmd_file="syscfg/c2000ware_libraries.opt"  "../device/device.c"
+Finished building: "../device/device.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
