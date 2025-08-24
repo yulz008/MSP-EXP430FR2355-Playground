@@ -2,11 +2,11 @@
 
 Development Board: **MSP-EXP430FR2355**
 
-This repository contains my personal workspace for the **MSP430FR2355** microcontroller, created using **Code Composer Studio (CCS)**. It serves as a collection of **sample code**, **experiments**, and **driver-level implementations** for learning and prototyping with the F28379D device.
+This repository contains my personal workspace for the **MSP430FR2355** microcontroller, created using **Code Composer Studio (CCS)**. It serves as a collection of **sample code**, **experiments**, and **driver-level implementations** for learning and prototyping with the MSP430FR2355 device.
 
 ## 💡 Purpose
 
-This repo is mainly for my own reference — a playground to explore how to bring up and control different hardware peripherals on the TMS320F28379D MCU.
+This repo is mainly for my own reference — a playground to explore how to bring up and control different hardware peripherals on the MSP430FR2355 MCU.
 
 You might find some useful starting points if you're also working with this chip or just learning how to build things up from the register level.
 
